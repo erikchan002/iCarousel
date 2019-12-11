@@ -186,6 +186,8 @@ NSComparisonResult compareViewDepth(UIView *view1, UIView *view2, iCarousel *sel
     {
         [self reloadData];
     }
+    
+    [self layOutItemViews];
 }
 
 #ifndef USING_CHAMELEON
@@ -916,7 +918,6 @@ NSComparisonResult compareViewDepth(UIView *view1, UIView *view2, iCarousel *sel
 {
     [super layoutSubviews];
     _contentView.frame = self.bounds;
-    [self layOutItemViews];
 }
 
 #endif
